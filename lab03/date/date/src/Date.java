@@ -130,10 +130,9 @@ public class Date {
 	 * must be divisible by 400.
 	 */
 	public boolean isLeapYear() {
-		if (year % 100 == 0) {
-			return year % 400 == 0;
-		}
-		return year % 4 == 0;
+		return (year % 100 == 0)
+				? year % 400 == 0
+				: year % 4 == 0;
 	}
 
 	public String toString() {
