@@ -112,41 +112,45 @@ class DateTest {
   @Test
   void nextDate_invalid_tc16() {
     assertThrows(
-      IllegalArgumentException.class,
-      () -> new Date(1500, 2, 31)
-    );
+        IllegalArgumentException.class,
+        () -> new Date(1500, 2, 31));
   }
 
   @Test
   void nextDate_invalid_tc17() {
     assertThrows(
-      IllegalArgumentException.class,
-      () -> new Date(1500, 2, 29)
-    );
+        IllegalArgumentException.class,
+        () -> new Date(1500, 2, 29));
   }
 
   @Test
   void nextDate_invalid_tc18() {
     assertThrows(
-      IllegalArgumentException.class,
-      () -> new Date(-1, 10, 20)
-    );
+        IllegalArgumentException.class,
+        () -> new Date(-1, 10, 20));
   }
 
   @Test
   void nextDate_invalid_tc19() {
     assertThrows(
-      IllegalArgumentException.class,
-      () -> new Date(1458, 15, 12)
-    );
+        IllegalArgumentException.class,
+        () -> new Date(1458, 15, 12));
   }
 
   @Test
   void nextDate_invalid_tc20() {
     assertThrows(
-      IllegalArgumentException.class,
-      () -> new Date(1975, 6, -50)
-    );
+        IllegalArgumentException.class,
+        () -> new Date(1975, 6, -50));
+  }
+
+  @Test
+  void date_additionalCoverage() {
+    Date leapDate = new Date(2024, 2, 29);
+
+    assertEquals("2024/February/29", leapDate.toString());
+    assertFalse(leapDate.equals("not a date"));
+    assertFalse(leapDate.equals(new Date(2024, 2, 28)));
   }
 
 }
