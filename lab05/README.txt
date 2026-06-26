@@ -15,3 +15,18 @@ Before making any modifications, both projects provided for the lab were tested 
 
 ```text
 --add-opens java.base/java.lang=ALL-UNNAMED
+
+## Step 1 - Calculator Stub
+
+A temporary `Grades.Calculator` module was added to verify that the application correctly calls the calculator functions.
+
+The stub currently returns fixed values:
+
+- Percentage: 95
+- Letter grade: A+
+- Numeric grade: 10
+
+### Result
+
+- The **Calculate** button no longer throws an exception.
+- The application successfully displays the values returned by the stub implementation.
