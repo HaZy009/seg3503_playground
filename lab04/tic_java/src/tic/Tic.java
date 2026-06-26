@@ -22,12 +22,15 @@ public class Tic {
 	public void play(int row, int col) {
 		if (board[row][col].equals("_")) {
 			board[row][col] = turn;
+			switchTurn();
+		}
+	}
 
-			if (turn.equals("X")) {
-				turn = "O";
-			} else {
-				turn = "X";
-			}
+	private void switchTurn() {
+		if (turn.equals("X")) {
+			turn = "O";
+		} else {
+			turn = "X";
 		}
 	}
 }

@@ -110,3 +110,23 @@ Prevent a player from overwriting an occupied cell.
 The test failed because the second move overwrote the existing value on the board.
 
 Status: RED ✅
+
+## GREEN
+
+### Code Added
+The `play()` method now checks whether the selected cell is empty before placing a mark.
+
+### Result
+The occupied cell is no longer overwritten and all JUnit tests pass.
+
+Status: GREEN ✅
+
+## REFACTOR
+
+### Changes
+The turn switching logic was moved into a separate private method named `switchTurn()`.
+
+### Result
+The code is easier to read and all JUnit tests still pass.
+
+Status: REFACTOR ✅
