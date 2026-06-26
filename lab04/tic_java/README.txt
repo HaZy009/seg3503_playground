@@ -35,3 +35,13 @@ method play(int,int)
 ```
 
 Status: RED ✅
+
+## GREEN
+
+### Code Added
+A new `play(int row, int col)` method was added.
+
+```java
+public void play(int row, int col) {
+    board[row][col] = "X";
+}
