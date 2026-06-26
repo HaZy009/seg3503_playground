@@ -37,4 +37,14 @@ class TicTest {
 
         assertEquals("O", board.turn);
     }
+
+    @Test
+    void shouldNotOverwriteOccupiedCell() {
+        Tic board = new Tic(3, 3);
+
+        board.play(0, 0); // X
+        board.play(0, 0); // O essaie de jouer au même endroit
+
+        assertEquals("X", board.board[0][0]);
+    }
 }

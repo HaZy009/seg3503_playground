@@ -95,3 +95,18 @@ Improved the `play()` method so that the turn alternates between `"X"` and `"O"`
 The existing tests still pass, and the code is now ready to support multiple turns.
 
 Status: REFACTOR ✅
+
+# Commit Group 3
+
+## RED
+
+### Goal
+Prevent a player from overwriting an occupied cell.
+
+### Test Added
+`shouldNotOverwriteOccupiedCell()`
+
+### Result
+The test failed because the second move overwrote the existing value on the board.
+
+Status: RED ✅
