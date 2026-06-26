@@ -192,3 +192,15 @@ A `hasWinner()` method was added to detect a win on the first row.
 The new winning row test passes and all JUnit tests pass.
 
 Status: GREEN ✅
+
+## REFACTOR
+
+### Changes
+- Added comments to improve code readability.
+- Improved the documentation of fields and methods.
+- No functional changes were made.
+
+### Result
+All JUnit tests still pass after refactoring.
+
+Status: REFACTOR ✅
