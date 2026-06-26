@@ -30,3 +30,37 @@ The stub currently returns fixed values:
 
 - The **Calculate** button no longer throws an exception.
 - The application successfully displays the values returned by the stub implementation.
+
+## Step 2 - Real Calculator Implementation
+
+The temporary stub was replaced with a real implementation of `Grades.Calculator`.
+
+The calculator now:
+
+- Converts form input values from strings to numbers.
+- Computes the average homework grade.
+- Computes the average lab grade.
+- Calculates the final percentage using the following weights:
+  - Homework: 15%
+  - Labs: 15%
+  - Midterm: 30%
+  - Final: 40%
+- Converts the percentage into a letter grade.
+- Converts the percentage into a numeric grade.
+
+### Test Case
+
+The values shown in the lab slides were used:
+
+- Homework: 89, 92, 100, 48
+- Labs: 100, 100, 25, 100, 100, 25
+- Midterm: 73
+- Final: 83
+
+### Result
+
+- Percentage: 78.6875
+- Letter grade: B+
+- Numeric grade: 7
+
+The application now calculates and displays real grade values instead of fixed stub values.
