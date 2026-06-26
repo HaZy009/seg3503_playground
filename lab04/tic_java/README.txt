@@ -46,6 +46,8 @@ public void play(int row, int col) {
     board[row][col] = "X";
 }
 
+Status: GREEN ✅
+
 ## REFACTOR
 
 ### Changes
@@ -73,3 +75,13 @@ Add turn switching after a player makes a move.
 The test failed because `turn` still remains `"X"` after calling `play()`.
 
 Status: RED ✅
+
+## GREEN
+
+### Code Added
+The `play()` method now uses the current value of `turn` and switches it to `"O"` after a move.
+
+### Result
+The test now passes because after player X plays, the turn changes to O.
+
+Status: GREEN ✅
