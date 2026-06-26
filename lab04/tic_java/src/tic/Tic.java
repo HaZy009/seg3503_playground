@@ -37,4 +37,10 @@ public class Tic {
 			turn = "X";
 		}
 	}
+
+	public boolean hasWinner() {
+		return board[0][0].equals("X")
+				&& board[0][1].equals("X")
+				&& board[0][2].equals("X");
+	}
 }
