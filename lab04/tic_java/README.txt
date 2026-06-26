@@ -145,3 +145,13 @@ Handle moves outside the board with a clearer exception.
 The test failed because the current code throws an array index exception instead of an `IllegalArgumentException`.
 
 Status: RED ✅
+
+## GREEN
+
+### Code Added
+The `play()` method now validates the row and column before accessing the board.
+
+### Result
+An `IllegalArgumentException` is thrown when the move is outside the board, and all JUnit tests pass.
+
+Status: GREEN ✅

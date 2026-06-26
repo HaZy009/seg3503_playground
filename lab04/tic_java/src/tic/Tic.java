@@ -20,6 +20,10 @@ public class Tic {
 	}
 
 	public void play(int row, int col) {
+		if (row < 0 || row >= rows || col < 0 || col >= cols) {
+			throw new IllegalArgumentException("Move is outside the board");
+		}
+
 		if (board[row][col].equals("_")) {
 			board[row][col] = turn;
 			switchTurn();
