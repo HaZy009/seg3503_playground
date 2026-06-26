@@ -167,3 +167,18 @@ The validation logic is concise, readable, and does not introduce unnecessary du
 All tests still pass.
 
 Status: REFACTOR ✅
+
+# Commit Group 5
+
+## RED
+
+### Goal
+Detect when a player wins on the first row.
+
+### Test Added
+`shouldDetectWinOnFirstRow()`
+
+### Result
+Compilation failed because the `hasWinner()` method does not exist yet.
+
+Status: RED ✅
