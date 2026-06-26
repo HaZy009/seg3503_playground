@@ -47,4 +47,25 @@ class TicTest {
 
         assertEquals("X", board.board[0][0]);
     }
+
+    @Test
+    void shouldAlternateTurns() {
+        Tic board = new Tic(3, 3);
+
+        board.play(0, 0); // X
+        board.play(1, 1); // O
+
+        assertEquals("X", board.turn);
+        assertEquals("X", board.board[0][0]);
+        assertEquals("O", board.board[1][1]);
+    }
+
+    @Test
+    void shouldThrowIllegalArgumentExceptionWhenMoveIsOutsideBoard() {
+        Tic board = new Tic(3, 3);
+
+        assertThrows(IllegalArgumentException.class, () -> {
+            board.play(3, 3);
+        });
+    }
 }

@@ -130,3 +130,18 @@ The turn switching logic was moved into a separate private method named `switchT
 The code is easier to read and all JUnit tests still pass.
 
 Status: REFACTOR ✅
+
+# Commit Group 4
+
+## RED
+
+### Goal
+Handle moves outside the board with a clearer exception.
+
+### Test Added
+`shouldThrowIllegalArgumentExceptionWhenMoveIsOutsideBoard()`
+
+### Result
+The test failed because the current code throws an array index exception instead of an `IllegalArgumentException`.
+
+Status: RED ✅
