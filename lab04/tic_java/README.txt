@@ -85,3 +85,13 @@ The `play()` method now uses the current value of `turn` and switches it to `"O"
 The test now passes because after player X plays, the turn changes to O.
 
 Status: GREEN ✅
+
+## REFACTOR
+
+### Changes
+Improved the `play()` method so that the turn alternates between `"X"` and `"O"` instead of always setting it to `"O"`.
+
+### Result
+The existing tests still pass, and the code is now ready to support multiple turns.
+
+Status: REFACTOR ✅

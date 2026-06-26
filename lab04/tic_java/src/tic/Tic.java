@@ -21,6 +21,11 @@ public class Tic {
 
 	public void play(int row, int col) {
 		board[row][col] = turn;
-		turn = "O";
+
+		if (turn.equals("X")) {
+			turn = "O";
+		} else {
+			turn = "X";
+		}
 	}
 }
