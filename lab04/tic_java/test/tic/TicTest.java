@@ -19,4 +19,13 @@ class TicTest {
             }
         }
     }
+
+    @Test
+    void shouldPlaceXOnEmptyCell() {
+        Tic board = new Tic(3, 3);
+
+        board.play(0, 0);
+
+        assertEquals("X", board.board[0][0]);
+    }
 }
