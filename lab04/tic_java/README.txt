@@ -155,3 +155,15 @@ The `play()` method now validates the row and column before accessing the board.
 An `IllegalArgumentException` is thrown when the move is outside the board, and all JUnit tests pass.
 
 Status: GREEN ✅
+
+## REFACTOR
+
+### Changes
+No refactoring was required.
+
+The validation logic is concise, readable, and does not introduce unnecessary duplication.
+
+### Result
+All tests still pass.
+
+Status: REFACTOR ✅
