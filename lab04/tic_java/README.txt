@@ -58,3 +58,18 @@ The implementation is already minimal and satisfies the current test without unn
 All tests still pass.
 
 Status: REFACTOR ✅
+
+# Commit Group 2
+
+## RED
+
+### Goal
+Add turn switching after a player makes a move.
+
+### Test Added
+`shouldSwitchTurnAfterPlay()`
+
+### Result
+The test failed because `turn` still remains `"X"` after calling `play()`.
+
+Status: RED ✅
