@@ -64,3 +64,29 @@ The values shown in the lab slides were used:
 - Numeric grade: 7
 
 The application now calculates and displays real grade values instead of fixed stub values.
+
+## Step 3 - Twitter Mock Tests
+
+Four missing test cases were implemented using EasyMock partial mocks for `loadTweet()`.
+
+### Results before fixing `isMentionned()`
+
+- `isMentionned_handleNull()` failed with a `NullPointerException`.
+- `isMentionned_dontReturnSubstringMatches()` failed because `@meat` was incorrectly detected as `@me`.
+- `actual_call()` was unstable because it depends on `Math.random()`.
+
+### Fix
+
+`isMentionned()` was updated to:
+
+- return `false` when `loadTweet()` returns `null`;
+- avoid substring matches such as `@me` inside `@meat`.
+
+### Final test result
+
+- 7 tests found
+- 1 test skipped
+- 6 tests successful
+- 0 tests failed
+
+The skipped test is `actual_call()` because it depends on random output from `loadTweet()`.
