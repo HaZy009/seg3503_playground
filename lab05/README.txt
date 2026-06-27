@@ -90,3 +90,9 @@ Four missing test cases were implemented using EasyMock partial mocks for `loadT
 - 0 tests failed
 
 The skipped test is `actual_call()` because it depends on random output from `loadTweet()`.
+
+## AI Disclosure
+
+Generative AI (ChatGPT) was used as a learning and guidance tool throughout this lab. It was used to help understand the requirements, troubleshoot environment issues, discuss implementation approaches, and review code.
+
+All code was reviewed, tested, integrated, and validated by me before submission.

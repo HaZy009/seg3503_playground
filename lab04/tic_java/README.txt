@@ -204,3 +204,9 @@ Status: GREEN ✅
 All JUnit tests still pass after refactoring.
 
 Status: REFACTOR ✅
+
+## AI Disclosure
+
+Generative AI (ChatGPT) was used as a learning and guidance tool throughout this lab. It was used to help understand the requirements, troubleshoot environment issues, discuss implementation approaches, and review code.
+
+All code was reviewed, tested, integrated, and validated by me before submission.
